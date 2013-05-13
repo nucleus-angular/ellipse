@@ -1,0 +1,10 @@
+{
+  "name": "nucleus-angular-ellipse",
+  "version": "0.2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "1.0.6",
+    "angular-mocks": "1.0.6",
+    "unstable-angular-complete": "1.1.4"
+  }
+}
