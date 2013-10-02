@@ -1,5 +1,7 @@
 /**
- * Filter that ellipses text when it reaches is certain length
+ * # Nucleus Angular Ellipse
+ *
+ * This filter will ellipse text when it reaches is certain length.
  *
  * @module nag.ellipse
  * @ngfilter nagEllipse
@@ -10,6 +12,33 @@
  * @param {number} [endingShow=8] Number of character from the ending to show
  *
  * @return {string} The text to display
+ *
+ * @example To use the default settings:
+ *
+ * ```html
+ * <!-- would output: some_...full.png -->
+ * {{text | nagEllipse}}
+ *
+ * <script type="text/javascript">
+ * //inside a controller somewhere
+ * $scope.text = 'some_really_long_file_name_that_should_not_be_shown_in_full.png';
+ * </script>
+ * ```
+ *
+ * You can also define your own settings:
+ *
+ * ```html
+ * <!-- would output: so..._in_full.png -->
+ * {{text | nagEllipse}}
+ *
+ * <!-- would output: some_really_long_file_name_that_should_not_be_shown_in_full.png
+ * {{text | nagEllipse}}
+ *
+ * <script type="text/javascript">
+ * //inside a controller somewhere
+ * $scope.text = 'some_really_long_file_name_that_should_not_be_shown_in_full.png';
+ * </script>
+ * ```
  */
 angular.module('nag.ellipse', [])
 .filter('nagEllipse', [function(){
