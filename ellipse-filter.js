@@ -40,7 +40,7 @@
  * </script>
  * ```
  */
-angular.module('nag.ellipse', [])
+angular.module('nag.ellipse')
 .filter('nagEllipse', [function(){
   return function(text, minLength, beginningShow, endingShow){
     minLength = minLength || 17;
