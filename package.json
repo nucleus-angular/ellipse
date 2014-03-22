@@ -1,7 +1,7 @@
 {
   "name": "nucleus-angular-ellipse",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.5.0",
   "dependencies": {},
   "devDependencies": {
     "karma-mocha": "0.1.1",
